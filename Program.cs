@@ -8,10 +8,7 @@ namespace SleepingBarber
 		public static void Main(string[] args)
 		{
 			int simulationDuration = args.Length > 0 && int.TryParse(args[0], out int d) ? d : 3;
-			simulationDuration *= 1000;
-
 			int barberCount = args.Length > 1 && int.TryParse(args[1], out int b) ? b : 2;
-
 			int chairCount = args.Length > 2 && int.TryParse(args[2], out int c) ? c : 3;
 
 			Console.WriteLine($"{simulationDuration} seconds simulation starting with: {barberCount} Barbers, {chairCount} Chairs.");
@@ -30,7 +27,7 @@ namespace SleepingBarber
 			}
 
 			// Give some time for the barber to work
-			Thread.Sleep(simulationDuration);
+			Thread.Sleep(simulationDuration * 1000);
 
 			barberShop.CloseShop();
 		}
