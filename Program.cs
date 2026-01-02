@@ -27,7 +27,7 @@ namespace SleepingBarber
 			}
 
 			// Give some time for the barber to work
-			Thread.Sleep(simulationDuration * 1000);
+			Thread.Sleep(simulationDuration * 1000); // sec to msec
 
 			barberShop.CloseShop();
 		}
