@@ -119,20 +119,20 @@ git clone https://github.com/duhanayan/Sleeping-Barber-CSharp.git
 cd SleepingBarber
 ```
 
-### 3. Run with default parameters (2 Barbers, 3 Chairs):
+### 3. Run with default parameters (3 Seconds, 2 Barbers, 3 Chairs):
 ```bash
 dotnet run
 ```
 
 ### 4. Run with custom parameters:
 ```bash
-# 4 Barbers, 10 Chairs
-dotnet run -- 4 10
+# 5 Seconds, 4 Barbers, 10 Chairs
+dotnet run -- 5 4 10
 ```
 
 ## 📊 Sample Output
 ```bash
-# 2 Barbers, 3 Chairs
+# 3 Seconds, 2 Barbers, 3 Chairs
 dotnet run
 ```
 <pre>
