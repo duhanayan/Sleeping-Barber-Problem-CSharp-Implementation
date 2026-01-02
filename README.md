@@ -156,3 +156,6 @@ dotnet run
 <code><span style="color: gray;">6263</span> <span style="color: yellow;">Barber (2)</span> has stopped working.</code>
 <code><span style="color: gray;">6263</span> <span style="color: yellow;">Barber (1)</span> has stopped working.</code>
 </pre>
+
+# 📄 License
+MIT License - feel free to use this for learning or your portfolio!
