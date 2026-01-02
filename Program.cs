@@ -1,4 +1,4 @@
-﻿namespace SleepingBarber
+namespace SleepingBarber
 {
 	using SleepingBarber.Models;
 	using SleepingBarber.Utils;
@@ -7,10 +7,14 @@
 	{
 		public static void Main(string[] args)
 		{
-			int barberCount = args.Length > 0 && int.TryParse(args[0], out int b) ? b : 2;
-			int chairCount = args.Length > 1 && int.TryParse(args[1], out int c) ? c : 3;
+			int simulationDuration = args.Length > 0 && int.TryParse(args[0], out int d) ? d : 3;
+			simulationDuration *= 1000;
 
-			Console.WriteLine($"Simulation starting with: {barberCount} Barbers, {chairCount} Chairs.");
+			int barberCount = args.Length > 1 && int.TryParse(args[1], out int b) ? b : 2;
+
+			int chairCount = args.Length > 2 && int.TryParse(args[2], out int c) ? c : 3;
+
+			Console.WriteLine($"{simulationDuration} seconds simulation starting with: {barberCount} Barbers, {chairCount} Chairs.");
 			Console.WriteLine($"Note: Each barber has a random shave duration (100-500ms).");
 
 			using BarberShop barberShop = new BarberShop(barberCount, chairCount);
@@ -26,7 +30,8 @@
 			}
 
 			// Give some time for the barber to work
-			Thread.Sleep(5000);
+			Thread.Sleep(simulationDuration);
+
 			barberShop.CloseShop();
 		}
 	}
