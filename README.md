@@ -1,4 +1,4 @@
-# Sleeping Barber Problem - C# Implementation
+# 💈 Sleeping Barber Problem - C# Implementation
 
 A thread-safe implementation of the classic **Sleeping Barber Problem**, demonstrating concurrency control, synchronization primitives, and resource management in C# .NET.
 
