@@ -136,7 +136,7 @@ dotnet run -- 5 4 10
 dotnet run
 ```
 <pre>
-<code>Simulation starting with: 2 Barbers, 3 Chairs.</code>
+<code>3 seconds simulation starting with: 2 Barbers, 3 Chairs.</code>
 <code>Note: Each barber has a random shave duration (100-500ms).</code>
 <code> </code>
 <code><span style="color: gray;">1</span> <span style="color: yellow;">Barber (1)</span> has started working.</code>
