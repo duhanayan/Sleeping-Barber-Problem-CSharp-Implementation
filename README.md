@@ -107,11 +107,16 @@ catch (OperationCanceledException)
 }
 ```
 
+## 📦 Prerequisites
+
+- [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) or later
+- Any operating system (Windows, macOS, Linux)
+
 ## 🖥️ How to Run
 
 ### 1. Clone the repository:
 ```bash
-git clone https://github.com/duhanayan/Sleeping-Barber-CSharp.git
+git clone https://github.com/duhanayan/Sleeping-Barber-Problem-CSharp-Implementation.git
 ```
 
 ### 2. Navigate to the project folder:
@@ -119,12 +124,17 @@ git clone https://github.com/duhanayan/Sleeping-Barber-CSharp.git
 cd SleepingBarber
 ```
 
-### 3. Run with default parameters (3 Seconds, 2 Barbers, 3 Chairs):
+### 3. Build the project:
+```bash
+dotnet build
+```
+
+### 4. Run with default parameters (3 Seconds, 2 Barbers, 3 Chairs):
 ```bash
 dotnet run
 ```
 
-### 4. Run with custom parameters:
+### 5. Run with custom parameters:
 ```bash
 # 5 Seconds, 4 Barbers, 10 Chairs
 dotnet run -- 5 4 10
